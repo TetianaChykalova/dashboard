@@ -179,17 +179,24 @@ main {
 }
 .table__table {
     min-width: 100%;
+    border-collapse: collapse;
+}
+.table__table thead {
+
 }
 .table__table tr {
     height: 69px;
-    border-bottom: 5px solid #000;
 }
 /*.table__table tr:after {*/
 /*    content: '';*/
+/*    background: #EEEEEE;*/
 /*    height: 1px;*/
 /*    width: 100%;*/
-/*    background: #EEEEEE;*/
 /*}*/
+.table__table thead,
+.table__table td {
+    border-bottom: 1px solid #EEEEEE;
+}
 .table__table th {
     font-weight: 500;
     font-size: 14px;
@@ -207,5 +214,25 @@ main {
 }
 .table__table a {
     color: #292D32;
+}
+.table__status {
+    width: 80px;
+    height: 29px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    border-radius: 4px;
+}
+.active__status {
+    color: #008767;
+    background: rgba(22, 192, 152, 0.38);
+    border: 1px solid #00B087;
+}
+.inactive__status {
+    color: #DF0404;
+    background: #FFC5C5;
+    border: 1px solid #DF0404;
 }
 
