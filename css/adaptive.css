@@ -96,6 +96,7 @@
         max-width: none;
         width: 100%;
         transition: all 1.5s ease-in-out 0s;
+        overflow: auto;
     }
     .active__sidebar {
         top: 60px;
