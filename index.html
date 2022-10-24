@@ -10,30 +10,42 @@
 
     <link rel="shortcut icon" href="img/icons/logo.ico">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/adaptive.css">
 </head>
 <body>
 
 <div class="wrapper">
+    <div class="burger">
+        <div class="burger__content">
+                    <header class="sidebar__logo">
+                        <img src="img/logo.png" alt="logo">
+                        <h1>Dashboard</h1>
+                    </header>
+            <div class="burger__line" id="burger-line">
+                <span></span>
+            </div>
+        </div>
+    </div>
 
-    <div class="sidebar">
+    <div class="sidebar" id="burger-menu">
         <div class="sidebar__content">
-            <div class="sidebar__logo">
+            <header class="sidebar__logo sidebar__logo-desk">
                 <img src="img/logo.png" alt="logo">
                 <h1>Dashboard<span>v.01</span></h1>
-            </div>
+            </header>
 
             <div class="sidebar__menu">
                 <div class="sidebar__item">
                     <div class="sidebar__menu-left">
                         <img src="img/icons/key-square.png" alt="">
-                        <p>Dashboard</p>
+                        <a href="#">Dashboard</a>
                     </div>
                 </div>
 
                 <div class="sidebar__item">
                     <div class="sidebar__menu-left">
                         <img src="img/icons/3d-square.png" alt="">
-                        <p>Product</p>
+                        <a href="#">Product</a>
                     </div>
                     <div class="sidebar__menu-right">
                         <img src="img/icons/chevron-right.png" alt="arrow">
@@ -43,7 +55,7 @@
                 <div class="sidebar__item active-item">
                     <div class="sidebar__menu-left">
                         <img src="img/icons/user-square.png" alt="">
-                        <p>Customers</p>
+                        <a href="#">Customers</a>
                     </div>
                     <div class="sidebar__menu-right">
                         <img src="img/icons/chevron-right-w.png" alt="arrow">
@@ -53,7 +65,7 @@
                 <div class="sidebar__item">
                     <div class="sidebar__menu-left">
                         <img src="img/icons/discount-shape.png" alt="">
-                        <p>Income</p>
+                        <a href="#">Income</a>
                     </div>
                     <div class="sidebar__menu-right">
                         <img src="img/icons/chevron-right.png" alt="arrow">
@@ -63,7 +75,7 @@
                 <div class="sidebar__item">
                     <div class="sidebar__menu-left">
                         <img src="img/icons/key-square.png" alt="">
-                        <p>Promote</p>
+                        <a href="#">Promote</a>
                     </div>
                     <div class="sidebar__menu-right">
                         <img src="img/icons/chevron-right.png" alt="arrow">
@@ -73,7 +85,7 @@
                 <div class="sidebar__item">
                     <div class="sidebar__menu-left">
                         <img src="img/icons/key-square.png" alt="">
-                        <p>Help</p>
+                        <a href="#">Help</a>
                     </div>
                     <div class="sidebar__menu-right">
                         <img src="img/icons/chevron-right.png" alt="arrow">
@@ -82,7 +94,7 @@
 
             </div>
 
-            <div class="sidebar__user">
+            <footer class="sidebar__user">
                 <div class="sidebar__user-photo">
                     <img src="img/pm.png" alt="author">
                 </div>
@@ -94,11 +106,11 @@
                         Project Manager
                     </p>
                 </div>
-            </div>
+            </footer>
         </div>
     </div>
 
-    <main>
+    <main id="main-content">
         <div class="main__name">
             <p>
                 Hello Evano 👋🏼,
@@ -266,5 +278,6 @@
 </div>
 
 
+<script src="js/script.js"></script>
 </body>
 </html>

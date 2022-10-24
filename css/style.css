@@ -3,17 +3,21 @@
 body {
     background: #FAFBFF;
     font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100%;
 }
 .wrapper {
-    display: grid;
-    grid-template-columns: 306px 1fr;
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
 }
 .sidebar {
     background: #FFF;
-    height: 100%;
+    min-height: 100%;
+    width: 306px;
 }
 .sidebar__content {
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     padding: 36px 28px 76px;
@@ -47,6 +51,7 @@ body {
 
 .sidebar__menu {
     flex: 1 1 auto;
+    margin: 0 0 40px 0;
 }
 .sidebar__item {
     display: flex;
@@ -56,6 +61,12 @@ body {
     padding: 11px 8px 11px 11px;
     margin: 0 0 18px 0;
     border-radius: 8px;
+}
+.sidebar__item a {
+    color: #000;
+}
+.active-item a {
+    color: #FFF;
 }
 .active-item{
     background: #5932EA;
@@ -108,6 +119,7 @@ body {
 
 main {
     padding: 41px 71px;
+    width: 100%;
 }
 .main__name {
     margin: 0 0 51px 0;
@@ -188,12 +200,6 @@ main {
 .table__table tr {
     height: 69px;
 }
-/*.table__table tr:after {*/
-/*    content: '';*/
-/*    background: #EEEEEE;*/
-/*    height: 1px;*/
-/*    width: 100%;*/
-/*}*/
 .table__table thead,
 .table__table td {
     border-bottom: 1px solid #EEEEEE;
